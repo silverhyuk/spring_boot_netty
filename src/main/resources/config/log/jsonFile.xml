@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appender name="JSON_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <fileNamePattern>${LOG_FILE}/pay_log_receiver.%d{yyyy-MM-dd}-%i.json</fileNamePattern>
+        <maxHistory>10</maxHistory>
+        <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+            <maxFileSize>100MB</maxFileSize>
+        </timeBasedFileNamingAndTriggeringPolicy>
+    </rollingPolicy>
+
+
+    <encoder
+            class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+        <providers>
+            <arguments/>
+            <stackTrace/>
+            <timestamp>
+                <timeZone>UTC</timeZone>
+            </timestamp>
+            <pattern>
+                <pattern>
+                    {
+                    "severity": "%level",
+                    "service": "order",
+                    "pid": ${PID:-},
+                    "thread": "%thread",
+                    "logger": "%logger",
+                    "message": "%message"
+                    }
+                </pattern>
+            </pattern>
+        </providers>
+    </encoder>
+</appender>
+
+
+

@@ -1,0 +1,18 @@
+# 기본 환경설정
+
+spring:
+  profiles:
+    active: local
+
+# 로컬개발환경
+---
+spring:
+  profiles: local
+  devtools:
+    livereload:
+      enabled: true
+
+common:
+  worker-thread-count: 30
+  boss-thread-count: 1
+  tcp-port: 9999

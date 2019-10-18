@@ -1,0 +1,7 @@
+2019-10-18 14:06:04.083 INFO  --- [restartedMain] com.cafe24corp.sfd.Application : Starting Application on ehchoiPC with PID 11392 (D:\WorkSpace\IdeaProjects\payLogReceiver\out\production\classes started by 최은혁 in D:\WorkSpace\IdeaProjects\payLogReceiver) 
+2019-10-18 14:06:04.086 DEBUG --- [restartedMain] com.cafe24corp.sfd.Application : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE 
+2019-10-18 14:06:04.086 INFO  --- [restartedMain] com.cafe24corp.sfd.Application : The following profiles are active: local 
+2019-10-18 14:06:04.156 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2019-10-18 14:06:04.720 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2019-10-18 14:06:04.735 INFO  --- [restartedMain] com.cafe24corp.sfd.Application : Started Application in 1.257 seconds (JVM running for 4.765) 
+2019-10-18 14:06:04.738 DEBUG --- [restartedMain] com.cafe24corp.sfd.Application : ================debug================== 
